@@ -3,100 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>My Protfolio</title>
 </head>
 <body>
-    <header>
-        <img src="Images/logo.png" alt="logo" width="50">
-
-
+   <header>
+    <div class="header-container">
+       <div class="logo"></div>
+        <img src="Images/logo.png" alt="logo" width="50" class="logo">
+       </div>
         <nav>
-        </ul>
-          <li> <a href="#">Home </a></li>
-          <li> <a href="#">About </a></li>
-          <li><a href="#skills">Skills</a></li>
-           <li> <a href="#">Projects </a></li>
-           <li> <a href="#">Contact </a></li>
-        </ul>
-            <form></form>
-            <input type="text" placeholder="Search">
-            <button type="submit">Search</button>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            
+            <form class="search-form">
+                <input type="text" placeholder="Search">
+                <button type="submit">Search</button>
             </form>
         </nav>
-        <hr>
-    </header>
+    </div>
+    <hr>
+</header>
     <main>
-        <h1> About Me</h1>
+        <section id="about">
+  <div class="about-container">
+    <h1 class="about-heading">About Me</h1>
+    <div class="about-content">
+      <div class="about-text">
         <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-             Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets. 
-             It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged. 
-             It was popularised thanks to these sheets and more recently with desktop publishing software like Aldus PageMaker and Microsoft Word including versions of Lorem Ipsum.
-
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets. 
+          It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged. 
+          It was popularised thanks to these sheets and more recently with desktop publishing software like Aldus PageMaker and Microsoft Word including versions of Lorem Ipsum.
         </p>
-        <img src="Images/logo.png" alt="logo" width="200">
-        <section id="skills">
-            <h1>My Skills</h1>
-            <d1>
-            <dt>Programming Languagees</dt>
-            <dd>Java, Python, c#, JS </dd>
+      </div>
+      <div class="about-image">
+        <img src="Images/myimg.jpeg" alt="logo">
+      </div>
+    </div>
+  </div>
+</section>
+<section id="skills">
+  <div class="skills-container">
+    <h1 class="skills-heading">My Skills</h1>
+    
+    <div class="skills-grid">
+      
+      <dl class="skills-card">
+        <dt>Programming Languages</dt>
+        <dd>Java, Python, C#, JS</dd>
+      </dl>
 
-            <dt>Frameworks</dt>
-            <dd>django, asp.dotnet, angular, blazor </dd>
+      <dl class="skills-card">
+        <dt>Frameworks</dt>
+        <dd>Django, ASP.NET, Angular, Blazor</dd>
+      </dl>
 
-            <dt>Databases</dt>
-            <dd>MySQL, mongoDB, Postgres, Oracle </dd>
+      <dl class="skills-card">
+        <dt>Databases</dt>
+        <dd>MySQL, MongoDB, PostgreSQL, Oracle</dd>
+      </dl>
 
-            <dt>Tools</dt>
-            <dd>Visual Studio, Word, Excel,Powerpoint </dd>
-            </d1>
-        </section>
+      <dl class="skills-card">
+        <dt>Tools</dt>
+        <dd>Visual Studio, Word, Excel, PowerPoint</dd>
+      </dl>
+
+    </div>
+  </div>
+</section>
+        
         <!-- This is section for projects-->
-        <section id="Projects">
-        <h1>My Projects</h1>
+       <section id="Projects">
+    <h2>My Projects</h2>
+    
+    <div class="Projects-container">
+    
         <article>
             <h3>Object Detection System</h3>
-            <p>I have created a application that correctly detect multiple object</p>
-            <p> <a href="https://github.com/amritashah068-jpg/my-first-project.git" target="_blank">Click here to view Projects</a></p>
-        
+            <p>I have created an application that correctly detects multiple objects.</p>
+            <p><a href="https://github.com/amritashah068-jpg/my-first-project.git" target="_blank">Click here to view Projects</a></p>
         </article>
 
         <article>
-        <h3>Learning Management System</h3>
-        <p>I have created a application that connects students and teacher for teaching
-        <p> <a href="https://github.com/amritashah068-jpg/my-first-project.git" target="_blank">Click here to view projects</a>
-    
+            <h3>Learning Management System</h3>
+            <p>I have created an application that connects students and teachers for teaching.</p>
+            <p><a href="https://github.com/amritashah068-jpg/my-first-project.git" target="_blank">Click here to view projects</a></p>
         </article>
-         </section>
+        
+    </div>
+</section>
         <!-- This is section for Contacts-->
-        <section id="Contact Details">
-        <h1>Contact Details</h1>
+       <section id="Contact">
+    <h2>Contact Details</h2>
+    
+    <div class="Contact-container">
         <form>
-        <label>Full Name</label><br>
-        <input type="text"><br>
+            <label>Full Name</label><br>
+            <input type="text"><br>
 
-        <label>Email</label><br>
-        <input type="email"><br>
+            <label>Email</label><br>
+            <input type="email"><br>
 
-        <label>Message</label><br>
-        <textarea></textarea><br>
-        <button type="submit">submit</button>
+            <label>Message</label><br>
+            <textarea></textarea><br>
+            
+            <button type="submit">submit</button>
         </form>
-        </section>
-        <section>
-            <form>
-                <label>Message</label><br>
-                <textarea></textarea><br>
-                <button type="submit">submit</button>
-            </form>
-        </section>
+    </div>
+</section>
 
         <div style="text-align: center; margin: 20px 0;">
             <a href="#" target="_blank"><img src="images/github.png" alt="GitHub" width="40" style="margin: 0 5px;"></a>
-            <a href="#" target="_blank"><img src="images/google.jpg" alt="Google" width="50" style="margin: 1 5px;"></a>
-            <a href="#" target="_blank"><img src="imageslinkedin-icon.png" alt="LinkedIn" width="40" style="margin: 0 5px;"></a>
-            <a href="#" target="_blank"><img src="facebook-icon.png" alt="Facebook" width="40" style="margin: 0 5px;"></a>
-            <a href="#" target="_blank"><img src="whatsapp-icon.png" alt="WhatsApp" width="40" style="margin: 0 5px;"></a>
+            <a href="#" target="_blank"><img src="images/google.jpg" alt="Google" width="50" style="margin: 1px 5px;"></a>
+            <a href="#" target="_blank"><img src="images/linkdn.jpg." alt="LinkedIn" width="40" style="margin: 0 5px;"></a>
+            <a href="#" target="_blank"><img src="Images/fb.png" alt="Facebook" width="40" style="margin: 0 5px;"></a>
+            <a href="#" target="_blank"><img src="Images/insta.jpg" alt="WhatsApp" width="40" style="margin: 0 5px;"></a>
         </div>
         
         <hr>
